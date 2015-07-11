@@ -19,7 +19,9 @@ body {
 .main {
   margin: 0 auto;
   max-width: 960px;
+  min-height: 700px;
   width: 960px;
+  background-color: white;
 }
 
 .left-panel, .right-panel {
@@ -117,6 +119,51 @@ body {
 .container {
   width: 960px;
   margin: 0 auto;
+  padding: 0;
+}
+
+.jumbotron {
+  background-color: white;
+}
+
+.all-covers {
+  background-color: white;
+  padding-top: 40px;
+  .covered {
+    width: 470px;
+    height: 470px;
+    background-size: 470px 470px;
+    background-color: red;
+    margin: 0 20px 20px 0;
+    &.immortal {
+      background-image: url(../assets/images/immortal-cover.jpg);
+      &:hover {
+        background-image: url(../assets/images/immortal-hero.jpg);
+      }
+    }
+    &.bouquet {
+      background-image: url(../assets/images/flower-cover.jpg);
+      &:hover {
+        background-image: url(../assets/images/flower-hero.jpg);
+      }
+    }
+    &.wedding {
+      background-image: url(../assets/images/wedding-cover.jpg);
+      &:hover {
+        background-image: url(../assets/images/wedding-hero.jpg);
+      }
+    }
+    &.style {
+      background-image: url(../assets/images/style-cover.jpg);
+      &:hover {
+        background-image: url(../assets/images/style-hero.jpg);
+      }
+    }
+    &.right-item {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 }
 
 /**
