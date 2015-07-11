@@ -1,34 +1,79 @@
 <div class="container">
 
-  <div>
-    <acme-navbar creationDate="main.creationDate" />
-  </div>
-
-  <div class="jumbotron text-center">
-    <h1>登陆/注册</h1>
-    <p class="lead">
-      <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-      Always a pleasure scaffolding your apps.
-    </p>
-    <p class="animated infinite" ng-class="main.classAnimation">
-      <button type="button" class="btn btn-lg btn-success" ng-click="main.showToastr()">Splendid Toastr</button>
-    </p>
-    <p>
-      With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']" />
-    </p>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-      <div class="thumbnail">
-        <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-        <div class="caption">
-          <h3>{{ awesomeThing.title }}</h3>
-          <p>{{ awesomeThing.description }}</p>
-          <p><a ng-href="{{awesomeThing.url}}">{{ awesomeThing.url }}</a></p>
-        </div>
-      </div>
+    <div>
+        <acme-navbar creationDate="main.creationDate"/>
     </div>
-  </div>
 
+    <div id="main">
+        <div class="center">
+            <div class="col-main-inner">
+                <div class="account-login">
+                    <div class="page-title">
+                        <h1>登录或新建帐号</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5 new-users user-section">
+                            <div class="user-content">
+                                <h3 class="title">新客户</h3>
+
+                                <p>注册您自己的帐户，结算更方便迅速，而且可以保存多个送货地址、查看订单状态等。</p>
+
+                                <div class="clear"></div>
+                                <div id="wx_root" class="visible-desktop" style="padding-top:30px;">
+                                    <img
+                                        src="/images/wx.jpg" style="float: left; margin-right: 15px;
+							">关注并绑定官方微信，获取订单实时状态通知。
+                                </div>
+                            </div>
+                            <div class="col-xs-offset-8 col-xs-4">
+                                <button type="button" title="注册" class="button"
+                                        ui-sref="signup"><span><span>注册</span></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="border-space col-xs-1">
+                        </div>
+                        <div class="col-xs-5 registered-users user-section">
+                            <div class="user-content">
+                                <h3 class="title">老客户</h3>
+
+                                <p>如果您已有帐号，请登录。</p>
+                                <ul class="form-list">
+                                    <li>
+                                        <label for="username" class="required"><em>*</em>邮箱/实体店注册手机</label>
+
+                                        <div class="input-box">
+                                            <input type="text" name="username" value="" id="username"
+                                                   class="input-text required-entry validate-email" title="电子邮箱">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label for="password" class="required"><em>*</em>密码</label>
+
+                                        <div class="input-box">
+                                            <input type="password" name="password"
+                                                   class="input-text required-entry validate-password" id="password"
+                                                   title="密码">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span id="errormsg" class="required"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-2 registered-users" rel="login">
+                                <div class="buttons-set"><a href="/user/forgetpwd.htm" class="f-left">忘记您的密码了？</a>
+                                    <button onclick="doLogin()" type="button" class="button" title="登录" name="send"
+                                            id="send2"><span><span>登录</span></span></button>
+                                    <a href="javascript:void(0)" onclick="wbLogin();" class="sina_button_ps"><img
+                                            src="http://statics.thebeastshop.com/skin/frontend/default/default/images/mec/sina.gif"
+                                            alt="Connect with Sina"></a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
