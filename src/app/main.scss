@@ -1,0 +1,111 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+/**
+ *  Do not remove this comments bellow. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #cecece;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 960px;
+}
+
+.left-panel, .right-panel {
+  padding: 0;
+}
+.right-panel {
+  padding-left: 12px;
+}
+
+.row,
+.image,
+.image img {
+  margin: 0;
+  padding: 0;
+}
+
+.left-panel img {
+  padding: 12px 6px 0 0;
+  width: 100%;
+}
+
+.left-panel .image.row-last img {
+  padding-left: 6px;
+}
+
+.left-panel .last img {
+  padding: 12px 0 0;
+  width: 480px;
+  height: 378px;
+}
+
+.right-panel .image img {
+  padding: 12px 6px 0 6px;
+  width: 156px;
+  height: 156px;
+}
+
+.right-panel .image.row-first img {
+  padding-left: 0;
+}
+.right-panel .image.row-last img {
+  padding-right: 0;
+}
+
+
+.image.row-last img {
+  padding-right: 0;
+}
+
+.item img {
+  width: 100%;
+  height: 468px;
+  padding: 0;
+}
+
+.item {
+  height: 468px !important;
+}
+
+.fake-image {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 960px;
+  display: block;
+}
+
+/* you can also define the transition style
+   on the base class as well (.repeat-item) */
+.repeat-item.ng-enter,
+.repeat-item.ng-leave {
+  -webkit-transition:5s linear all;
+  transition:5s linear all;
+}
+
+.repeat-item.ng-enter,
+.repeat-item.ng-leave.ng-leave-active {
+  opacity:0;
+}
+.repeat-item.ng-leave,
+.repeat-item.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+/**
+ *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
