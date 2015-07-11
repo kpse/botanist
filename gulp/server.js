@@ -2,6 +2,7 @@
 
 var path = require('path');
 var gulp = require('gulp');
+var connect = require('gulp-connect');
 var conf = require('./conf');
 
 var browserSync = require('browser-sync');
@@ -52,6 +53,14 @@ gulp.task('serve', ['watch'], function () {
 
 gulp.task('serve:dist', ['build'], function () {
   browserSyncInit(conf.paths.dist);
+});
+
+gulp.task('serveprod', ['build'], function () {
+  connect.server({
+    root: [conf.paths.dist],
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
 });
 
 gulp.task('serve:e2e', ['inject'], function () {
