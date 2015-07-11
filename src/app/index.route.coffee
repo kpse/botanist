@@ -31,5 +31,20 @@ angular.module "botanist"
     templateUrl: "app/classic/classic.html"
     controller: "ClassicController"
     controllerAs: "classic"
+  .state "signin",
+    url: "/signin"
+    templateUrl: "app/login/signin.html"
+    controller: "SignInController"
+    controllerAs: "signin"
+  .state "signup",
+    url: "/signup"
+    templateUrl: "app/login/signup.html"
+    controller: "SignUpController"
+    controllerAs: "signup"
+  .state "cart",
+    url: "/cart"
+    templateUrl: "app/cart/cart.html"
+    controller: "CartController"
+    controllerAs: "cart"
 
   $urlRouterProvider.otherwise '/'
