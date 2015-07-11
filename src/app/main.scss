@@ -25,6 +25,7 @@ body {
 .left-panel, .right-panel {
   padding: 0;
 }
+
 .right-panel {
   padding-left: 12px;
 }
@@ -60,10 +61,10 @@ body {
 .right-panel .image.row-first img {
   padding-left: 0;
 }
+
 .right-panel .image.row-last img {
   padding-right: 0;
 }
-
 
 .image.row-last img {
   padding-right: 0;
@@ -96,6 +97,7 @@ body {
     list-style: none;
   }
 }
+
 .border-space {
   width: 3%;
 }

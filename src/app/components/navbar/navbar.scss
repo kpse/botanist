@@ -1,3 +1,30 @@
 .acme-navbar-text{
   color: white;
 }
+
+.menu-item {
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  span {
+    display: none;
+  }
+  &.menu-bouquet {
+    background-image: url(../assets/images/menu-bouquet.png);
+  }
+  &.menu-immortal {
+    background-image: url(../assets/images/menu-immortal.png);
+  }
+  &.menu-wedding {
+    background-image: url(../assets/images/menu-wedding.png);
+  }
+  &.menu-classic {
+    background-image: url(../assets/images/menu-classic.png);
+  }
+  &.menu-profile {
+    background-image: url(../assets/images/menu-profile.png);
+  }
+  &.menu-cart {
+    background-image: url(../assets/images/menu-cart.png);
+  }
+}
