@@ -59,6 +59,7 @@ gulp.task('serveprod', ['build'], function () {
   connect.server({
     root: [conf.paths.dist],
     port: process.env.PORT || 5000, // localhost:5000
+    host: '0.0.0.0', // localhost:5000
     livereload: false
   });
 });
