@@ -37,12 +37,6 @@
     "browser-sync": "~2.7.12",
     "browser-sync-spa": "~1.0.2",
     "http-proxy-middleware": "~0.0.5",
-    "wrench": "~1.5.8"
-  },
-  "scripts": {
-    "test": "gulp test"
-  },
-  "devDependencies": {
     "karma": "~0.12.36",
     "karma-jasmine": "~0.3.5",
     "karma-phantomjs-launcher": "~0.2.0",
@@ -51,7 +45,14 @@
     "concat-stream": "~1.5.0",
     "require-dir": "~0.3.0",
     "chalk": "~1.0.0",
-    "uglify-save-license": "~0.4.1"
+    "uglify-save-license": "~0.4.1",
+    "wrench": "~1.5.8"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "devDependencies": {
+
   },
   "engines": {
     "node": ">=0.10.0"
