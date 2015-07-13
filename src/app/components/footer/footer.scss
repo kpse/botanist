@@ -1,0 +1,24 @@
+
+.footer-nav {
+  overflow: auto;
+  width: 960px;
+  border-top: 2px solid #fff;
+  box-sizing: border-box;
+  margin: 20px auto;
+  .copyright, .call-number {
+    margin-top: 20px;
+    color: #fff;
+  }
+  .qr-code {
+    margin-top: 20px;
+    .qr-item {
+      width: 109px;
+      p, img {
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }
+
+}
