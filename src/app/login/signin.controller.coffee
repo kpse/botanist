@@ -1,7 +1,7 @@
 angular.module "botanist"
-  .controller "SignInController", ($timeout, webDevTec, toastr) ->
+  .controller "SignInController", ->
     vm = this
 
 
-  .controller "SignUpController", ($timeout, webDevTec, toastr) ->
+  .controller "SignUpController", ->
     vm = this

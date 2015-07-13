@@ -1,5 +1,5 @@
 angular.module "botanist"
-  .factory 'githubContributor', ($log, $http) ->
+  .factory 'githubContributor', [ '$log', '$http', ($log, $http) ->
     apiHost = 'https://api.github.com/repos/Swiip/generator-gulp-angular'
 
     getContributors = (limit) ->
@@ -18,3 +18,4 @@ angular.module "botanist"
     service =
       apiHost: apiHost
       getContributors: getContributors
+  ]

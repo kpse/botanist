@@ -1,4 +1,4 @@
 angular.module "botanist"
-  .controller "CartController", ($timeout, webDevTec, toastr) ->
+  .controller "CartController", ->
     vm = this
 

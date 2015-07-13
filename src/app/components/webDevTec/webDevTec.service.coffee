@@ -1,5 +1,5 @@
 angular.module "botanist"
-  .service "webDevTec", () ->
+  .service "webDevTec", ->
     data = [
       {
         'title': 'AngularJS',

@@ -1,5 +1,5 @@
 angular.module "botanist"
-  .controller "HomeController", ($scope) ->
+  .controller "HomeController", [ '$scope', ($scope) ->
     vm = this
 
     $scope.myInterval = 3200
@@ -10,4 +10,5 @@ angular.module "botanist"
       {image: 'http://7qnc6c.com1.z0.glb.clouddn.com/V1_3.jpg'},
 
     ]
+  ]
 

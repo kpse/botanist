@@ -1,5 +1,5 @@
 angular.module "botanist"
-  .controller "ImmortalController", ($timeout, webDevTec, toastr) ->
+  .controller "ImmortalController", ['$timeout', 'webDevTec', 'toastr', ($timeout, webDevTec, toastr) ->
     vm = this
     activate = ->
       getWebDevTec()
@@ -27,3 +27,4 @@ angular.module "botanist"
     vm.showToastr = showToastr
     activate()
     return
+  ]

@@ -1,11 +1,11 @@
 angular.module "botanist"
   .directive 'acmeNavbar', ->
 
-    NavbarController = (moment) ->
+    NavbarController = ['moment', (moment) ->
       vm = this
       # "vm.creation" is avaible by directive option "bindToController: true"
       vm.relativeDate = moment(vm.creationDate).fromNow()
-      return
+    ]
 
     directive =
       restrict: 'E'

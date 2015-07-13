@@ -1,7 +1,7 @@
 angular.module "botanist"
   .directive 'acmeMalarkey', ->
 
-    MalarkeyController = ($log, githubContributor) ->
+    MalarkeyController = [ '$log', 'githubContributor', ($log, githubContributor) ->
       vm = this
 
       activate = ->
@@ -40,3 +40,4 @@ angular.module "botanist"
       link: linkFunc
       controller: MalarkeyController
       controllerAs: 'vm'
+  ]
