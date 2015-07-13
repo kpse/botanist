@@ -33,7 +33,8 @@
     "main-bower-files": "~2.8.0",
     "merge-stream": "~0.1.7",
     "jshint-stylish": "~2.0.0",
-    "wiredep": "~2.2.2"
+    "wiredep": "~2.2.2",
+    "wrench": "~1.5.8"
   },
   "scripts": {
     "test": "gulp test"
@@ -50,8 +51,7 @@
     "browser-sync-spa": "~1.0.2",
     "http-proxy-middleware": "~0.0.5",
     "chalk": "~1.0.0",
-    "uglify-save-license": "~0.4.1",
-    "wrench": "~1.5.8"
+    "uglify-save-license": "~0.4.1"
   },
   "engines": {
     "node": ">=0.10.0"
